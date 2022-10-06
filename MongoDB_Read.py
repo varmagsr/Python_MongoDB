@@ -1,5 +1,5 @@
 import certifi as certifi
-from bson import ObjectId
+# from bson import ObjectId
 from pymongo import MongoClient
 
 
@@ -29,7 +29,7 @@ print(record.next())
 for i in collection.find({"_id": "10021707"}):
     print(i)
 
-for x in collection.find(
+for n in collection.find(
         {"minimum_nights": "1", "bedrooms": 1, "accommodates": 2, "maximum_nights": "1125", "property_type": "Hostel",
          "bathrooms": 1.5}):
-    print(x)
+    print(n)
